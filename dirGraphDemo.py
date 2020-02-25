@@ -28,8 +28,8 @@ def shortestPathContainer():
 	
 	class DirGraph:	
 		def __init__(self,nodes):
-			self.N = nodes					#Number of nodes
-			self.ogV = nodes 				#Original number of nodes
+			self.N = nodes						#Number of nodes
+			self.ogV = nodes 					#Original number of nodes
 			self.dirGraph = defaultdict(list)	#Dictionary that Contains graph
 
 		#Creates arc
