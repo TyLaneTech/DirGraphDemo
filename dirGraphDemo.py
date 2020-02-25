@@ -25,7 +25,6 @@ def graphDrawing():
 	print ("                                       ")
 
 def shortestPathContainer():
-	
 	class DirGraph:	
 		def __init__(self,nodes):
 			self.N = nodes						#Number of nodes
@@ -64,7 +63,7 @@ def shortestPathContainer():
 				for i in self.dirGraph[s]: 		#Get adjacent nodes of s (last vertex popped from queue) 
 					try:
 						if visited[i] == False: #If an adjacent vertex has'nt been visited...
-							queue.append(i) 	#Enqueue it
+							queue.append(i) #Enqueue it
 							visited[i] = True 	#Mark it visited
 							parent[i] = s 		#Set the parent to the current vertex, and move on
 					except IndexError:
