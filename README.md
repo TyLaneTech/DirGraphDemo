@@ -8,17 +8,17 @@ II. HOW DOES IT WORK?
 
 Implementing this data structure in Python is pretty straight forward. Using a dictionary, items can be stored in a key value pair. The 'key' represents the 'source-node' and the 'value' represents the 'target-node'; this 'source-target' relationship is how we establish the direction of the arcs between nodes. Creating directed graph in Python can be accomplished like this:
 
-#first create a method to initialize the dictionary, and gets the number of nodes.
+#first create a method to initialize the dictionary, and gets the number of nodes:
 class DirGraph:
 	def __init__(self,nodes):
 		self.N = nodes				            #Number of nodes	
 		self.dirGraph = defaultdict(list)	#Dictionary containing graph
 
-#then create a method to add the arc to the dictionary (dirGraph)
+#then create a method to add the arc to the dictionary (dirGraph):
 	def addArc(self,s,t):                   #'s' & 't' represent the source, and target nodes of an arc.
 		self.dirGraph[s].append(t)	    	#Add arc to dictionary
 
-#then construct the graph
+#then construct the graph:
 	dg = DirGraph(10)		#Initialize graph with 10 nodes
 	dg.addArc(0, 1)			#Add arc (edge) from node 0 to 1
 	dg.addArc(0, 3)			#Add arc (edge) from node 0 to 3
