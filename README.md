@@ -49,7 +49,7 @@ This will create a directed graph that resembles the following:
 	                / \                      
 	               7   9                     
 
-NOTE: Direction of the arcs in this illustration is downward (ie. 0 to 3 is possible but 3 to 0 is not). This 'Downward' direction of the arcs is totally relative to the graphs orientation, and isn't always the case. Refer to graph.png for a more applicable illustration.
+NOTE: Direction of the arcs in this illustration is downward (ie. 0 to 3 is possible but 3 to 0 is not). This 'Downward' direction of the arcs is totally relative to the graphs orientation, and isn't always the case. Refer to dirGraph.png for a more applicable illustration.
 
 
 
